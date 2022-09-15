@@ -1,0 +1,18 @@
+//----- Библиотеки -----//
+@charset "UTF-8";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/normalize.css";
+
+//----- Глобальные стили -----//
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/basic.scss";
+
+//----- Основные стили -----//
+@import "blocks/pop-up.scss";
+@import "blocks/header.scss";
+@import "blocks/sidebar.scss";
+@import "blocks/test.scss";
+@import "blocks/profile.scss";

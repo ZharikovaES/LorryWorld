@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <body class="preload">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <a href="">
+              <img src="../images/svg/logo.svg" alt="" />
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header__list">
+              <li class="header-list__item link_shop">
+                <a href="">магазин</a>
+              </li>
+              <li class="header-list__item link_show">
+                <a href="">примерить</a>
+              </li>
+              <li class="header-list__item link_inventory">
+                <a href="">инвентарь</a>
+              </li>
+              <li class="header-list__item link_help">
+                <a href="">помощь</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btns">
+            <div class="header__languages dropDown">
+              <div class="header-languages__current">
+                <img src="../images/svg/russia.svg" alt="" />
+                <p>RU</p>
+              </div>
+              <div class="hide__items header-languages__all">
+                <div class="hide-items__wrapper languages-all__wrapper">
+                  <div class="hide__item languages-all__item">
+                    <a href="">
+                      <img src="../images/svg/russia.svg" alt="" />
+                      ru
+                    </a>
+                  </div>
+                  <div class="hide__item languages-all__item">
+                    <a href="">
+                      <img src="../images/svg/eng.svg" alt="" />
+                      eng
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__currency dropDown">
+              <div class="header-currency__current">
+                <p><span>₽</span> rub</p>
+              </div>
+              <div class="hide__items header-languages__all">
+                <div class="hide-items__wrapper currency-all__wrapper">
+                  <div class="hide__item currency-all__item">
+                    <a href=""><span>₽</span> rub </a>
+                  </div>
+                  <div class="hide__item currency-all__item">
+                    <a href=""> <span>$ </span>usd </a>
+                  </div>
+                  <div class="hide__item currency-all__item">
+                    <a href=""> <span>€ </span> eur </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__info-user">
+            <div class="header__bill">
+              <img class="header-bill__img" src="../images/svg/wallet.svg" alt="Кошелек" />
+              <span class="rub header-bill__value">23234</span>
+              <div class="header-bill__btn">
+                <img src="../images/svg/plus.svg" />
+              </div>
+            </div>
+      
+            <div class="header__profile" drop-down-btn>
+              <div class="header__profile-wrapper arrow">
+                <img class="header-profile__img" src="../images/jpg/avatar.jpg" alt="Аватар"/>
+              </div>
+      
+            </div>
+            <div class="hide__items header-info-user__options" drop-down-content>
+              <div class="hide-items__wrapper options-all__wrapper">
+                <div class="hide__item options-all__item">
+                  <a href="">Пополнить </a>
+                </div>
+                <div class="hide__item options-all__item">
+                  <a href="">Профиль</a>
+                </div>
+                <div class="hide__item options-all__item">
+                  <a href="">Выйти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page profile">
+        <div class="page__wrapper">
+          <div class="profile__tabs tabs">
+            <div class="tab active">
+                <img src="../images/svg/user.svg" alt="" />
+                <p>Профиль</p>
+            </div>
+            <div class="tab">
+                <img src="../images/svg/credit-card-white.svg" alt="" />
+                <p>Пополнения</p>
+            </div>
+          </div>        
+          <div class="profile__info">
+              <div class="profile-info__personal">
+                <h3>
+                  Личная информация
+                </h3>
+                <div class="profile-info__content">
+                  <img class="profile-info__avatar" src="../images/jpg/avatar.jpg"/>
+                  <p class="profile-info__username">Timur Doroshenko</p>
+                </div>
+                <p class="profile-info__large-items">Купленных предметов: <span>23</span></p>
+              </div>
+              <div class="profile-info__email">
+                <h3>
+                  E-mail:
+                </h3>
+                <div class="profile-info__edit visible">
+                  <span class="profile-edit__text"></span>
+                  <div class="profile-edit__btn-change-email">
+                    <img src="../images/svg/pencil-red.svg" alt="Изменить"/>
+                  </div>
+                </div>
+                <form class="profile-info__form" action="/" method="post" name="form-email" novalidate>
+                    <div>
+                      <small>такого email не существует</small>
+                      <div class="profile-info__input-wrapper">
+                        <input type="email" class="profile-info__input" valid name="email" id="email-field"/>
+                      </div>
+                    </div>
+                    <button class="profile-info__btn-edit-email" disabled type="submit" id="btn-email">применить</button>
+                </form>
+                <p class="profile-info__text">Если вы забудете пароль от аккаунта, то сможете восстановить его с помощью email</p>
+              </div>
+          </div>
+          <div class="page__area">
+            <div class="page-area__wrapper history">
+              <h2 class="history__title">История покупок</h2>
+              <div class="carts">
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart1.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Candleflame</p>
+                    <p>1000 ₽</p>
+                  </div>
+                </a>
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart2.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Darkbringer</p>
+                    <p>160 ₽</p>
+                  </div>
+                </a>
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart3.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>Chroma Lightbringer</p>
+                    <p>160 ₽</p>
+                  </div>
+                </a>
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart4.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>slasher</p>
+                    <p>140 ₽</p>
+                  </div>
+                </a>
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart5.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>slasher</p>
+                    <p>140 ₽</p>
+                  </div>
+                </a>
+                <a class="cart" href="#popup1">
+                  <div class="cart__img">
+                    <img src="../images/png/cart5.png" alt="" />
+                  </div>
+                  <div class="cart__content">
+                    <p>slasher</p>
+                    <p>140 ₽</p>
+                  </div>
+                </a>
+              </div>
+              <div class="history__carts-empty">
+                <span>
+                  Вы еще не совершали покупок
+                </span>
+              </div>
+            </div>
+            <div class="page-area__wrapper replenishment hide">
+              <table class="replenishment__table">
+                <tr>
+                  <td><img src="../images/svg/status-red.svg"/><span>статус</span></td>
+                  <td><img src="../images/svg/cheque-red.svg"/><span>метод</span></td>
+                  <td><img src="../images/svg/money-red.svg"/><span>сумма</span></td>
+                  <td><img src="../images/svg/date-red.svg"/><span>Дата</span></td>
+                  <td><img src="../images/svg/time-red.svg"/><span>время</span></td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status translated">Переведено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status canceled">Отменено</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+                <tr>
+                  <td class="status processing">В обработке</td>
+                  <td><img src="../images/svg/visa-white.svg" alt="Visa"/></td>
+                  <td class="rub">975</td>
+                  <td>27.09.2022</td>
+                  <td>17:53</td>
+                </tr>
+              </table>
+              <div class="replenishment__empty">
+                <span>
+                  Вы еще не пополняли баланс
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="pop-up" id="popup1">
+      <div class="pop-up__inner">
+        <a class="pop-up__btn-close" href="#"></a>
+        <div class="pop-up__cart">
+          <div class="pop-up-cart__img">
+          <img src="../images/png/cart-pop-up.png"/>
+          </div>
+          <div class="pop-up-cart__content">
+            <h3 class="pop-up-cart__title">Plasmablade Gamepass</h3>
+            <ul class="pop-up-cart__info">
+              <li class="pop-up-cart__info-item cart-info-item">
+                <span class="cart-info-item__label">тип</span>
+                <span class="cart-info-item__value">ножи</span>
+              </li>
+              <li class="pop-up-cart__info-item cart-info-item">
+                <span class="cart-info-item__label">качество</span>
+                <span class="cart-info-item__value">godly</span>
+              </li>
+            </ul>
+            <form action="" class="pop-up-cart__form">
+              <div class="cart-info-item">
+                <label for="" class="pop-up-cart__form-label cart-info-item__label">количество</label>
+                <div class="pop-up-cart__form-number">
+                  <div class="number-minus">
+                    <img rc="../images/svg/minus-red.svg" alt="-"/>
+                  </div>
+                  <input class="pop-up-cart__form-input" type="number" value="100" readonly min="1" max="100">
+                  <div class="number-plus">
+                    <img rc="../images/svg/plus-red.svg" alt="+"/>
+                  </div>
+                </div>
+                </div>
+              <div class="pop-up-cart__form-total rub">
+                149
+              </div>
+              <div class="pop-up-cart__form-empty-balance">
+                <a href="#" class="pop-up-cart__form-btn">
+                  <img src="../images/svg/credit-card-white.svg" alt="" />
+                  <p>пополнить баланс</p>
+                </a>        
+              </div>
+              <div class="pop-up-cart__form-replenished-balance">
+                <a href="#" class="pop-up-cart__form-btn">
+                  <img src="../images/svg/purchase-white.svg" alt="" />
+                  <p>купить предмет</p>
+                </a>        
+                <a href="#" class="pop-up-cart__form-btn-grey">
+                  <img src="../images/svg/credit-card-white.svg" alt="" />
+                  <p>пополнить баланс</p>
+                </a>        
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script> 
+      window.onload = function() {
+        document.body.classList.remove("preload");
+      }
+    </script>
+  </body>
+</html>
